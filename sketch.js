@@ -80,3 +80,9 @@ function mouseReleased(){
     gameState="launch";
     slingshot.fly();
 }
+
+function keyPressed() {
+  if (keyCode === 32) {
+    sling.attach(polygon.body);
+  }
+}
